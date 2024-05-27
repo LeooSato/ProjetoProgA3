@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="2"/>
+    <Property name="resizable" type="boolean" value="false"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,1,-65,0,0,2,-110"/>
+    <SyntheticProperty name="formSizePolicy" type="int" value="0"/>
+    <SyntheticProperty name="generateSize" type="boolean" value="true"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="true"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                  <Component id="jScrollPane1" max="32767" attributes="0"/>
+                  <Group type="102" attributes="0">
+                      <Component id="jButton1" min="-2" pref="120" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jButton7" min="-2" pref="120" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jButton10" min="-2" pref="120" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jButton8" min="-2" pref="120" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="jButton9" min="-2" pref="120" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="jButton12" min="-2" pref="120" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jButton11" min="-2" pref="120" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jButton13" min="-2" pref="120" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jButton14" min="-2" pref="120" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jButton15" min="-2" pref="120" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace max="32767" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+              <Component id="jButton16" min="-2" pref="120" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="jButton17" min="-2" pref="120" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="197" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="jScrollPane1" min="-2" pref="160" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jButton1" alignment="3" min="-2" pref="60" max="-2" attributes="0"/>
+                  <Component id="jButton7" alignment="3" min="-2" pref="60" max="-2" attributes="0"/>
+                  <Component id="jButton8" alignment="3" min="-2" pref="60" max="-2" attributes="0"/>
+                  <Component id="jButton9" alignment="3" min="-2" pref="60" max="-2" attributes="0"/>
+                  <Component id="jButton10" alignment="3" min="-2" pref="60" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jButton12" alignment="3" min="-2" pref="60" max="-2" attributes="0"/>
+                  <Component id="jButton11" alignment="3" min="-2" pref="60" max="-2" attributes="0"/>
+                  <Component id="jButton13" alignment="3" min="-2" pref="60" max="-2" attributes="0"/>
+                  <Component id="jButton14" alignment="3" min="-2" pref="60" max="-2" attributes="0"/>
+                  <Component id="jButton15" alignment="3" min="-2" pref="60" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jButton16" alignment="3" min="-2" pref="60" max="-2" attributes="0"/>
+                  <Component id="jButton17" alignment="3" min="-2" pref="60" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace pref="14" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="jTextPane1">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JButton" name="jButton1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Matem&#xe1;tica"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="jButton7">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Portugu&#xea;s"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="jButton8">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Fisica"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="jButton9">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Historia"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="jButton10">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Geografia"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="jButton11">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Educ&#xe3;o F&#xed;sica"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="jButton12">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Artes"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="jButton13">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Espanlho"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="jButton14">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Ingl&#xea;s"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="jButton15">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Qu&#xed;mica"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="jButton16">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Sociologia"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="jButton17">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Filosofia"/>
+      </Properties>
+    </Component>
+  </SubComponents>
+</Form>
