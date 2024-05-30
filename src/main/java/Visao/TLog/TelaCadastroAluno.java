@@ -1,5 +1,5 @@
 
-package Visao;
+package Visao.TLog;
 
 public class TelaCadastroAluno extends javax.swing.JFrame {
 

@@ -2,15 +2,20 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package Visao;
+package Visao.TPrincipal;
+
+import Visao.TLog.TelaLog;
+import javax.swing.JPanel;
 
 import Visao.TPrincipal.TelaCursos_Materias;
+import javax.swing.JOptionPane;
 
 /**
  *
  * @author cleis
  */
-public class TelaPrincipal extends javax.swing.JFrame {
+
+public class TelaPrincipal extends javax.swing.JFrame  {
 
     /**
      * Creates new form TelaPrincipal
@@ -36,10 +41,10 @@ public class TelaPrincipal extends javax.swing.JFrame {
         MenuCalendario = new javax.swing.JMenuItem();
         jMenuItem2 = new javax.swing.JMenuItem();
         jMenuItem3 = new javax.swing.JMenuItem();
+        jMenuItem1 = new javax.swing.JMenuItem();
         jMenu1 = new javax.swing.JMenu();
         jMenu2 = new javax.swing.JMenu();
         jMenu3 = new javax.swing.JMenu();
-        jMenu5 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Menu Principal");
@@ -100,6 +105,14 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jMenuItem3.setText("Livros");
         jMenu4.add(jMenuItem3);
 
+        jMenuItem1.setText("Sair");
+        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem1ActionPerformed(evt);
+            }
+        });
+        jMenu4.add(jMenuItem1);
+
         jMenuBar1.add(jMenu4);
 
         jMenu1.setText("Finaceiro");
@@ -110,9 +123,6 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         jMenu3.setText("Ajuda");
         jMenuBar1.add(jMenu3);
-
-        jMenu5.setText("Sair");
-        jMenuBar1.add(jMenu5);
 
         setJMenuBar(jMenuBar1);
 
@@ -150,8 +160,20 @@ public class TelaPrincipal extends javax.swing.JFrame {
          t.setVisible(true);
     }//GEN-LAST:event_MenuCalendarioActionPerformed
 
+    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+        int dialogResult = JOptionPane.showConfirmDialog(null, "Deseja realmente sair?", "Confirmação de Saída", JOptionPane.YES_NO_OPTION);
+        if (dialogResult == JOptionPane.YES_OPTION) {
+        dispose();
+        // Código para sair do aplicativo
+        TelaLog t = new TelaLog();
+        t.setVisible(true);
+        
+        }
+    }//GEN-LAST:event_jMenuItem1ActionPerformed
+
     /**
-     * @param args the command line arguments
+     *
+     * @param args
      */
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
@@ -178,7 +200,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
+         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new TelaPrincipal().setVisible(true);
               
@@ -192,8 +214,8 @@ public class TelaPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenu jMenu4;
-    private javax.swing.JMenu jMenu5;
     private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JPanel jPanel1;

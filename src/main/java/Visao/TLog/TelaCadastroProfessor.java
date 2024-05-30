@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package Visao;
+package Visao.TLog;
 
 /**
  *
@@ -605,7 +605,7 @@ public class TelaCadastroProfessor extends javax.swing.JFrame {
 
         TelaLog t = new TelaLog();
         t.setVisible(true);
-        this.dispose();
+        dispose();
 
     }//GEN-LAST:event_AvancaActionPerformed
 
