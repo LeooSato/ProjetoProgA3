@@ -1,7 +1,7 @@
 
 package Visao.TLog;
 
-import Visao.TPrincipal.TelaPrincipal;
+import Visao.TPrincipalAluno.TelaPrincipal;
 import java.awt.event.KeyEvent;
 
 /**

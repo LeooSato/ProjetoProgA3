@@ -83,13 +83,16 @@ public class TelaCadastroAluno extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
+        jLabel1.setBackground(new java.awt.Color(0, 0, 0));
         jLabel1.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 18)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 51, 255));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("Cadastro de Aluno");
+        jLabel1.setText("CADASTRO DE ALUNO");
         jLabel1.setToolTipText("");
         jLabel1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
+        jTextField2.setBackground(new java.awt.Color(255, 255, 255));
+        jTextField2.setForeground(new java.awt.Color(0, 0, 0));
         jTextField2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField2ActionPerformed(evt);
@@ -109,9 +112,11 @@ public class TelaCadastroAluno extends javax.swing.JFrame {
         jPanel6.setForeground(new java.awt.Color(0, 0, 255));
         jPanel6.setName(""); // NOI18N
 
+        jRadioButton1.setBackground(new java.awt.Color(255, 255, 255));
         jRadioButton1.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton1.setText("Masculino");
 
+        jRadioButton2.setBackground(new java.awt.Color(255, 255, 255));
         jRadioButton2.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton2.setText("Feminino");
         jRadioButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -120,6 +125,7 @@ public class TelaCadastroAluno extends javax.swing.JFrame {
             }
         });
 
+        jRadioButton3.setBackground(new java.awt.Color(255, 255, 255));
         jRadioButton3.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton3.setText("Outros");
         jRadioButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -151,9 +157,15 @@ public class TelaCadastroAluno extends javax.swing.JFrame {
                     .addComponent(jRadioButton3)))
         );
 
+        jTextField3.setBackground(new java.awt.Color(255, 255, 255));
+        jTextField3.setForeground(new java.awt.Color(0, 0, 0));
+
         nameLabel5.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         nameLabel5.setForeground(new java.awt.Color(51, 51, 255));
         nameLabel5.setText("CEP:");
+
+        jTextField6.setBackground(new java.awt.Color(255, 255, 255));
+        jTextField6.setForeground(new java.awt.Color(0, 0, 0));
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         jComboBox1.addActionListener(new java.awt.event.ActionListener() {
@@ -166,6 +178,7 @@ public class TelaCadastroAluno extends javax.swing.JFrame {
         nameLabel7.setForeground(new java.awt.Color(51, 51, 255));
         nameLabel7.setText("UF:");
 
+        jComboBox2.setForeground(new java.awt.Color(0, 0, 0));
         jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         jComboBox2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -181,12 +194,16 @@ public class TelaCadastroAluno extends javax.swing.JFrame {
         nameLabel8.setForeground(new java.awt.Color(51, 51, 255));
         nameLabel8.setText("Número de Matrícula:");
 
+        jTextField7.setBackground(new java.awt.Color(255, 255, 255));
+        jTextField7.setForeground(new java.awt.Color(0, 0, 0));
+
         nameLabel9.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         nameLabel9.setForeground(new java.awt.Color(51, 51, 255));
         nameLabel9.setText("Email:");
 
+        Avanca.setBackground(new java.awt.Color(0, 102, 102));
         Avanca.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        Avanca.setForeground(new java.awt.Color(0, 0, 255));
+        Avanca.setForeground(new java.awt.Color(255, 255, 255));
         Avanca.setText("Voltar");
         Avanca.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -198,17 +215,35 @@ public class TelaCadastroAluno extends javax.swing.JFrame {
         nameLabel2.setForeground(new java.awt.Color(51, 51, 255));
         nameLabel2.setText("Endereço:");
 
+        jTextField13.setBackground(new java.awt.Color(255, 255, 255));
+        jTextField13.setForeground(new java.awt.Color(0, 0, 0));
+
         nameLabel13.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         nameLabel13.setForeground(new java.awt.Color(51, 51, 255));
         nameLabel13.setText("Bairro:");
+
+        jTextField18.setBackground(new java.awt.Color(255, 255, 255));
+        jTextField18.setForeground(new java.awt.Color(0, 0, 0));
+
+        jTextField19.setBackground(new java.awt.Color(255, 255, 255));
+        jTextField19.setForeground(new java.awt.Color(0, 0, 0));
 
         nameLabel15.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         nameLabel15.setForeground(new java.awt.Color(51, 51, 255));
         nameLabel15.setText("Telefone:");
 
+        jTextField20.setBackground(new java.awt.Color(255, 255, 255));
+        jTextField20.setForeground(new java.awt.Color(0, 0, 0));
+
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));
         jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createTitledBorder(null, "Senha:\n", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("sansserif", 1, 14), new java.awt.Color(0, 51, 255)), "", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("sansserif", 1, 10), new java.awt.Color(0, 0, 0))); // NOI18N
         jPanel3.setForeground(new java.awt.Color(255, 255, 255));
+
+        jTextField21.setBackground(new java.awt.Color(255, 255, 255));
+        jTextField21.setForeground(new java.awt.Color(0, 0, 0));
+
+        jTextField22.setBackground(new java.awt.Color(255, 255, 255));
+        jTextField22.setForeground(new java.awt.Color(0, 0, 0));
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -230,8 +265,9 @@ public class TelaCadastroAluno extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
+        Avanca1.setBackground(new java.awt.Color(0, 102, 102));
         Avanca1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        Avanca1.setForeground(new java.awt.Color(0, 0, 255));
+        Avanca1.setForeground(new java.awt.Color(255, 255, 255));
         Avanca1.setText("Cadastrar");
         Avanca1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -246,18 +282,31 @@ public class TelaCadastroAluno extends javax.swing.JFrame {
         nameLabel10.setForeground(new java.awt.Color(51, 51, 255));
         nameLabel10.setText("RG:");
 
+        jTextField9.setBackground(new java.awt.Color(255, 255, 255));
+        jTextField9.setForeground(new java.awt.Color(0, 0, 0));
+
         nameLabel11.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         nameLabel11.setForeground(new java.awt.Color(51, 51, 255));
         nameLabel11.setText("Orgão expedidor:");
+
+        jTextField10.setBackground(new java.awt.Color(255, 255, 255));
+        jTextField10.setForeground(new java.awt.Color(0, 0, 0));
 
         nameLabel12.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         nameLabel12.setForeground(new java.awt.Color(51, 51, 255));
         nameLabel12.setText("Data de expedição:");
 
+        jTextField11.setBackground(new java.awt.Color(255, 255, 255));
+        jTextField11.setForeground(new java.awt.Color(0, 0, 0));
+
+        jTextField12.setBackground(new java.awt.Color(255, 255, 255));
+        jTextField12.setForeground(new java.awt.Color(0, 0, 0));
+
         nameLabel14.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         nameLabel14.setForeground(new java.awt.Color(51, 51, 255));
         nameLabel14.setText("UF:");
 
+        jComboBox3.setForeground(new java.awt.Color(0, 0, 0));
         jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         jComboBox3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -269,6 +318,9 @@ public class TelaCadastroAluno extends javax.swing.JFrame {
         nameLabel16.setForeground(new java.awt.Color(51, 51, 255));
         nameLabel16.setText("Título de eleitor:");
 
+        jTextField16.setBackground(new java.awt.Color(255, 255, 255));
+        jTextField16.setForeground(new java.awt.Color(0, 0, 0));
+
         nameLabel18.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         nameLabel18.setForeground(new java.awt.Color(51, 51, 255));
         nameLabel18.setText("CPF:");
@@ -277,21 +329,36 @@ public class TelaCadastroAluno extends javax.swing.JFrame {
         nameLabel17.setForeground(new java.awt.Color(51, 51, 255));
         nameLabel17.setText("Zona eleitoral:");
 
+        jTextField17.setBackground(new java.awt.Color(255, 255, 255));
+        jTextField17.setForeground(new java.awt.Color(0, 0, 0));
+
         nameLabel19.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         nameLabel19.setForeground(new java.awt.Color(51, 51, 255));
         nameLabel19.setText("Seção eleitoral:");
+
+        jTextField23.setBackground(new java.awt.Color(255, 255, 255));
+        jTextField23.setForeground(new java.awt.Color(0, 0, 0));
 
         nameLabel20.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         nameLabel20.setForeground(new java.awt.Color(51, 51, 255));
         nameLabel20.setText("Data de emissão:");
 
+        jTextField24.setBackground(new java.awt.Color(255, 255, 255));
+        jTextField24.setForeground(new java.awt.Color(0, 0, 0));
+
         nameLabel23.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         nameLabel23.setForeground(new java.awt.Color(51, 51, 255));
         nameLabel23.setText("Nome do pai");
 
+        jTextField25.setBackground(new java.awt.Color(255, 255, 255));
+        jTextField25.setForeground(new java.awt.Color(0, 0, 0));
+
         nameLabel24.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         nameLabel24.setForeground(new java.awt.Color(51, 51, 255));
         nameLabel24.setText("Nome da mãe");
+
+        jTextField26.setBackground(new java.awt.Color(255, 255, 255));
+        jTextField26.setForeground(new java.awt.Color(0, 0, 0));
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -395,27 +462,17 @@ public class TelaCadastroAluno extends javax.swing.JFrame {
         nameLabel21.setForeground(new java.awt.Color(51, 51, 255));
         nameLabel21.setText("ID");
 
+        jTextField8.setBackground(new java.awt.Color(255, 255, 255));
+        jTextField8.setForeground(new java.awt.Color(0, 0, 0));
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(27, 27, 27)
+                .addGap(53, 53, 53)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jTextField20, javax.swing.GroupLayout.PREFERRED_SIZE, 253, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(nameLabel15)
-                            .addComponent(jTextField19, javax.swing.GroupLayout.PREFERRED_SIZE, 253, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(203, 203, 203))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(Avanca, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(Avanca1, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap())
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(nameLabel8)
@@ -425,42 +482,59 @@ public class TelaCadastroAluno extends javax.swing.JFrame {
                                 .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 192, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addGroup(jPanel1Layout.createSequentialGroup()
                                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(nameLabel9)
-                                            .addComponent(nameLabel2)
                                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                                .addComponent(jTextField13, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addGap(18, 18, 18)
                                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                    .addComponent(nameLabel13)
-                                                    .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                                        .addGap(14, 14, 14)
-                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(nameLabel5)
-                                            .addComponent(jTextField18, javax.swing.GroupLayout.PREFERRED_SIZE, 177, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                    .addComponent(nameLabel4)
-                                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 253, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(nameLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, 253, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                                    .addComponent(nameLabel2)
+                                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                                        .addGap(170, 170, 170)
+                                                        .addComponent(nameLabel13)))
+                                                .addGap(129, 129, 129)
+                                                .addComponent(nameLabel5))
+                                            .addComponent(nameLabel4)
+                                            .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 253, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(nameLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, 253, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGap(157, 157, 157))
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addComponent(jTextField13, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(jTextField18, javax.swing.GroupLayout.PREFERRED_SIZE, 177, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)))
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(nameLabel7))))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addContainerGap(199, Short.MAX_VALUE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, 727, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGap(6, 6, 6)
                                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGap(18, 18, 18)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(nameLabel21)
-                                    .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                        .addGap(0, 28, Short.MAX_VALUE))))
+                                    .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(nameLabel21)))
+                            .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, 727, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(nameLabel9)
+                                    .addComponent(jTextField20, javax.swing.GroupLayout.PREFERRED_SIZE, 253, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(31, 31, 31)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jTextField19, javax.swing.GroupLayout.PREFERRED_SIZE, 253, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(nameLabel15))))
+                        .addGap(0, 0, Short.MAX_VALUE))))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(Avanca, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(Avanca1, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(53, 53, 53))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -493,44 +567,41 @@ public class TelaCadastroAluno extends javax.swing.JFrame {
                     .addComponent(nameLabel13)
                     .addComponent(nameLabel5))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 6, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(jTextField18, javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addComponent(jTextField6, javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addComponent(jTextField13, javax.swing.GroupLayout.Alignment.TRAILING)))
-                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextField18)
+                    .addComponent(jTextField6)
+                    .addComponent(jTextField13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(29, 29, 29)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(nameLabel9)
                     .addComponent(nameLabel15))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextField20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextField19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
+                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(nameLabel21)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 85, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(Avanca, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(Avanca1, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(31, 31, 31))
+                .addGap(20, 20, 20))
         );
 
         jScrollPane1.setViewportView(jPanel1);
 
         getContentPane().add(jScrollPane1);
-        jScrollPane1.setBounds(0, 0, 803, 985);
+        jScrollPane1.setBounds(0, 0, 860, 1070);
 
-        setSize(new java.awt.Dimension(825, 1024));
+        setSize(new java.awt.Dimension(868, 1106));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 

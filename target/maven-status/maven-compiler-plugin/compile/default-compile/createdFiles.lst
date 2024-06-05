@@ -5,13 +5,16 @@ Visao\TPrincipal\TelaPrincipal$3.class
 Visao\TLog\TelaCadastroAluno$4.class
 Visao\TLog\TelaCadastroAluno$8.class
 Visao\TLog\TelaCadastroProfessor$8.class
+Visao\TPrincipal\TelaBoletimEscolar.class
 Visao\TLog\TelaCadastroAluno$1.class
 Visao\TLog\TelaCadastroProfessor$2.class
 Visao\TLog\TelaLog$5.class
 Visao\TLog\TelaEscolhaAlunoProfessor$1.class
 Visao\TLog\TelaCadastroAluno$5.class
+Visao\TPrincipal\TelaPrincipal$6.class
 Visao\TPrincipal\TelaPrincipal$2.class
 Visao\TLog\TelaCadastroAluno$2.class
+Visao\TLog\TelaCadastroProfessor$10.class
 Visao\TLog\TelaCadastroProfessor$9.class
 Visao\TLog\TelaCadastroProfessor$6.class
 Visao\TPrincipal\TelaCursos_Materias$1.class
@@ -21,6 +24,7 @@ Visao\TLog\TelaCadastroProfessor$3.class
 Visao\TLog\TelaCadastroAluno$9.class
 Visao\TLog\TelaCadastroProfessor$7.class
 Visao\TLog\TelaLog$3.class
+Visao\TPrincipal\TelaBoletimEscolar$1.class
 Visao\TLog\TelaCadastroAluno$3.class
 Visao\TLog\TelaCadastroAluno$6.class
 Visao\TPrincipal\TelaPrincipal$5.class
