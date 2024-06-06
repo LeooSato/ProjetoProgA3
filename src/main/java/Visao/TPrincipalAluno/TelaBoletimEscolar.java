@@ -33,21 +33,21 @@ public class TelaBoletimEscolar extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTextPane1 = new javax.swing.JTextPane();
+        txtNota3 = new javax.swing.JTextPane();
         jScrollPane2 = new javax.swing.JScrollPane();
         jTextPane2 = new javax.swing.JTextPane();
         jScrollPane3 = new javax.swing.JScrollPane();
-        jTextPane3 = new javax.swing.JTextPane();
+        txtNota1 = new javax.swing.JTextPane();
         jScrollPane4 = new javax.swing.JScrollPane();
-        jTextPane4 = new javax.swing.JTextPane();
+        txtNota2 = new javax.swing.JTextPane();
         jScrollPane5 = new javax.swing.JScrollPane();
-        jTextPane5 = new javax.swing.JTextPane();
+        txtNota4 = new javax.swing.JTextPane();
         jLabel7 = new javax.swing.JLabel();
         jScrollPane6 = new javax.swing.JScrollPane();
-        jTextPane6 = new javax.swing.JTextPane();
-        jButton1 = new javax.swing.JButton();
+        txtMedia = new javax.swing.JTextPane();
+        btConsultarBoletin = new javax.swing.JButton();
         jLabel8 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
+        txtIdConsultarBoletin = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Boletim Escolar");
@@ -77,41 +77,41 @@ public class TelaBoletimEscolar extends javax.swing.JFrame {
         jLabel6.setForeground(new java.awt.Color(0, 0, 255));
         jLabel6.setText("NOTA 4 SEMESTRE");
 
-        jTextPane1.setBackground(new java.awt.Color(255, 255, 255));
-        jTextPane1.setForeground(new java.awt.Color(0, 0, 0));
-        jScrollPane1.setViewportView(jTextPane1);
+        txtNota3.setBackground(new java.awt.Color(255, 255, 255));
+        txtNota3.setForeground(new java.awt.Color(0, 0, 0));
+        jScrollPane1.setViewportView(txtNota3);
 
         jTextPane2.setBackground(new java.awt.Color(255, 255, 255));
         jTextPane2.setForeground(new java.awt.Color(0, 0, 0));
         jScrollPane2.setViewportView(jTextPane2);
 
-        jTextPane3.setBackground(new java.awt.Color(255, 255, 255));
-        jTextPane3.setForeground(new java.awt.Color(0, 0, 0));
-        jScrollPane3.setViewportView(jTextPane3);
+        txtNota1.setBackground(new java.awt.Color(255, 255, 255));
+        txtNota1.setForeground(new java.awt.Color(0, 0, 0));
+        jScrollPane3.setViewportView(txtNota1);
 
-        jTextPane4.setBackground(new java.awt.Color(255, 255, 255));
-        jTextPane4.setForeground(new java.awt.Color(0, 0, 0));
-        jScrollPane4.setViewportView(jTextPane4);
+        txtNota2.setBackground(new java.awt.Color(255, 255, 255));
+        txtNota2.setForeground(new java.awt.Color(0, 0, 0));
+        jScrollPane4.setViewportView(txtNota2);
 
-        jTextPane5.setBackground(new java.awt.Color(255, 255, 255));
-        jTextPane5.setForeground(new java.awt.Color(0, 0, 0));
-        jScrollPane5.setViewportView(jTextPane5);
+        txtNota4.setBackground(new java.awt.Color(255, 255, 255));
+        txtNota4.setForeground(new java.awt.Color(0, 0, 0));
+        jScrollPane5.setViewportView(txtNota4);
 
         jLabel7.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(0, 0, 255));
         jLabel7.setText("ID:");
 
-        jTextPane6.setBackground(new java.awt.Color(255, 255, 255));
-        jTextPane6.setForeground(new java.awt.Color(0, 0, 0));
-        jScrollPane6.setViewportView(jTextPane6);
+        txtMedia.setBackground(new java.awt.Color(255, 255, 255));
+        txtMedia.setForeground(new java.awt.Color(0, 0, 0));
+        jScrollPane6.setViewportView(txtMedia);
 
-        jButton1.setBackground(new java.awt.Color(0, 102, 102));
-        jButton1.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("Consuntar ");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btConsultarBoletin.setBackground(new java.awt.Color(0, 102, 102));
+        btConsultarBoletin.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
+        btConsultarBoletin.setForeground(new java.awt.Color(255, 255, 255));
+        btConsultarBoletin.setText("Consuntar ");
+        btConsultarBoletin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btConsultarBoletinActionPerformed(evt);
             }
         });
 
@@ -150,9 +150,9 @@ public class TelaBoletimEscolar extends javax.swing.JFrame {
                         .addContainerGap()
                         .addComponent(jLabel7)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txtIdConsultarBoletin, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(btConsultarBoletin, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(138, 138, 138)
                         .addComponent(jLabel2))
@@ -169,10 +169,10 @@ public class TelaBoletimEscolar extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(40, 40, 40)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btConsultarBoletin, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jLabel7)
-                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(txtIdConsultarBoletin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(27, 27, 27)
                 .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -215,9 +215,9 @@ public class TelaBoletimEscolar extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btConsultarBoletinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btConsultarBoletinActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_btConsultarBoletinActionPerformed
 
     /**
      * @param args the command line arguments
@@ -255,7 +255,7 @@ public class TelaBoletimEscolar extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton btConsultarBoletin;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -270,12 +270,12 @@ public class TelaBoletimEscolar extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JScrollPane jScrollPane6;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextPane jTextPane1;
     private javax.swing.JTextPane jTextPane2;
-    private javax.swing.JTextPane jTextPane3;
-    private javax.swing.JTextPane jTextPane4;
-    private javax.swing.JTextPane jTextPane5;
-    private javax.swing.JTextPane jTextPane6;
+    private javax.swing.JTextField txtIdConsultarBoletin;
+    private javax.swing.JTextPane txtMedia;
+    private javax.swing.JTextPane txtNota1;
+    private javax.swing.JTextPane txtNota2;
+    private javax.swing.JTextPane txtNota3;
+    private javax.swing.JTextPane txtNota4;
     // End of variables declaration//GEN-END:variables
 }

@@ -27,7 +27,7 @@ public class TelaCursos_Materias extends javax.swing.JFrame {
     private void initComponents() {
 
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTextPane1 = new javax.swing.JTextPane();
+        txtInformeMaterias = new javax.swing.JTextPane();
         jButton1 = new javax.swing.JButton();
         jButton7 = new javax.swing.JButton();
         jButton8 = new javax.swing.JButton();
@@ -44,30 +44,54 @@ public class TelaCursos_Materias extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setResizable(false);
 
-        jScrollPane1.setViewportView(jTextPane1);
+        jScrollPane1.setViewportView(txtInformeMaterias);
 
+        jButton1.setBackground(new java.awt.Color(0, 102, 102));
+        jButton1.setFont(new java.awt.Font("sansserif", 1, 13)); // NOI18N
         jButton1.setText("Matemática");
 
+        jButton7.setBackground(new java.awt.Color(0, 102, 102));
+        jButton7.setFont(new java.awt.Font("sansserif", 1, 13)); // NOI18N
         jButton7.setText("Português");
 
+        jButton8.setBackground(new java.awt.Color(0, 102, 102));
+        jButton8.setFont(new java.awt.Font("sansserif", 1, 13)); // NOI18N
         jButton8.setText("Fisica");
 
+        jButton9.setBackground(new java.awt.Color(0, 102, 102));
+        jButton9.setFont(new java.awt.Font("sansserif", 1, 13)); // NOI18N
         jButton9.setText("Historia");
 
+        jButton10.setBackground(new java.awt.Color(0, 102, 102));
+        jButton10.setFont(new java.awt.Font("sansserif", 1, 13)); // NOI18N
         jButton10.setText("Geografia");
 
+        jButton11.setBackground(new java.awt.Color(0, 102, 102));
+        jButton11.setFont(new java.awt.Font("sansserif", 1, 13)); // NOI18N
         jButton11.setText("Educão Física");
 
+        jButton12.setBackground(new java.awt.Color(0, 102, 102));
+        jButton12.setFont(new java.awt.Font("sansserif", 1, 13)); // NOI18N
         jButton12.setText("Artes");
 
+        jButton13.setBackground(new java.awt.Color(0, 102, 102));
+        jButton13.setFont(new java.awt.Font("sansserif", 1, 13)); // NOI18N
         jButton13.setText("Espanlho");
 
+        jButton14.setBackground(new java.awt.Color(0, 102, 102));
+        jButton14.setFont(new java.awt.Font("sansserif", 1, 13)); // NOI18N
         jButton14.setText("Inglês");
 
+        jButton15.setBackground(new java.awt.Color(0, 102, 102));
+        jButton15.setFont(new java.awt.Font("sansserif", 1, 13)); // NOI18N
         jButton15.setText("Química");
 
+        jButton16.setBackground(new java.awt.Color(0, 102, 102));
+        jButton16.setFont(new java.awt.Font("sansserif", 1, 13)); // NOI18N
         jButton16.setText("Sociologia");
 
+        jButton17.setBackground(new java.awt.Color(0, 102, 102));
+        jButton17.setFont(new java.awt.Font("sansserif", 1, 13)); // NOI18N
         jButton17.setText("Filosofia");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -186,6 +210,6 @@ public class TelaCursos_Materias extends javax.swing.JFrame {
     private javax.swing.JButton jButton8;
     private javax.swing.JButton jButton9;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextPane jTextPane1;
+    private javax.swing.JTextPane txtInformeMaterias;
     // End of variables declaration//GEN-END:variables
 }

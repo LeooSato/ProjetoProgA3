@@ -103,67 +103,139 @@
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
       <SubComponents>
-        <Component class="javax.swing.JTextPane" name="jTextPane1">
+        <Component class="javax.swing.JTextPane" name="txtInformeMaterias">
         </Component>
       </SubComponents>
     </Container>
     <Component class="javax.swing.JButton" name="jButton1">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="66" green="66" red="0" type="rgb"/>
+        </Property>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="sansserif" size="13" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Matem&#xe1;tica"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="jButton7">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="66" green="66" red="0" type="rgb"/>
+        </Property>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="sansserif" size="13" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Portugu&#xea;s"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="jButton8">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="66" green="66" red="0" type="rgb"/>
+        </Property>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="sansserif" size="13" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Fisica"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="jButton9">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="66" green="66" red="0" type="rgb"/>
+        </Property>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="sansserif" size="13" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Historia"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="jButton10">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="66" green="66" red="0" type="rgb"/>
+        </Property>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="sansserif" size="13" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Geografia"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="jButton11">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="66" green="66" red="0" type="rgb"/>
+        </Property>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="sansserif" size="13" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Educ&#xe3;o F&#xed;sica"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="jButton12">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="66" green="66" red="0" type="rgb"/>
+        </Property>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="sansserif" size="13" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Artes"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="jButton13">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="66" green="66" red="0" type="rgb"/>
+        </Property>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="sansserif" size="13" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Espanlho"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="jButton14">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="66" green="66" red="0" type="rgb"/>
+        </Property>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="sansserif" size="13" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Ingl&#xea;s"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="jButton15">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="66" green="66" red="0" type="rgb"/>
+        </Property>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="sansserif" size="13" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Qu&#xed;mica"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="jButton16">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="66" green="66" red="0" type="rgb"/>
+        </Property>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="sansserif" size="13" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Sociologia"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="jButton17">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="66" green="66" red="0" type="rgb"/>
+        </Property>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="sansserif" size="13" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Filosofia"/>
       </Properties>
     </Component>

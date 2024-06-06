@@ -130,9 +130,9 @@
                   </Group>
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="32767" attributes="0"/>
-                      <Component id="Avanca" min="-2" pref="110" max="-2" attributes="0"/>
+                      <Component id="btVoltarCA" min="-2" pref="110" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="Avanca1" min="-2" pref="110" max="-2" attributes="0"/>
+                      <Component id="btCadastroAluno" min="-2" pref="110" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="53" max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -200,8 +200,8 @@
                       </Group>
                       <EmptySpace pref="85" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="Avanca" alignment="3" min="-2" pref="52" max="-2" attributes="0"/>
-                          <Component id="Avanca1" alignment="3" min="-2" pref="52" max="-2" attributes="0"/>
+                          <Component id="btVoltarCA" alignment="3" min="-2" pref="52" max="-2" attributes="0"/>
+                          <Component id="btCadastroAluno" alignment="3" min="-2" pref="52" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
                   </Group>
@@ -477,7 +477,7 @@
                 <Property name="text" type="java.lang.String" value="Email:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JButton" name="Avanca">
+            <Component class="javax.swing.JButton" name="btVoltarCA">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="66" green="66" red="0" type="rgb"/>
@@ -491,7 +491,7 @@
                 <Property name="text" type="java.lang.String" value="Voltar"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="AvancaActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btVoltarCAActionPerformed"/>
               </Events>
             </Component>
             <Component class="javax.swing.JLabel" name="nameLabel2">
@@ -638,7 +638,7 @@
                 </Component>
               </SubComponents>
             </Container>
-            <Component class="javax.swing.JButton" name="Avanca1">
+            <Component class="javax.swing.JButton" name="btCadastroAluno">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="66" green="66" red="0" type="rgb"/>
@@ -652,7 +652,7 @@
                 <Property name="text" type="java.lang.String" value="Cadastrar"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Avanca1ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btCadastroAlunoActionPerformed"/>
               </Events>
             </Component>
             <Container class="javax.swing.JPanel" name="jPanel4">

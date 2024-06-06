@@ -50,8 +50,8 @@ public class TelaCadastroProfessor extends javax.swing.JFrame {
         jTextField14 = new javax.swing.JTextField();
         jTextField15 = new javax.swing.JTextField();
         nameLabel6 = new javax.swing.JLabel();
-        Avanca1 = new javax.swing.JButton();
-        Avanca = new javax.swing.JButton();
+        btCadastroProf = new javax.swing.JButton();
+        btVoltarCP = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
         nameLabel10 = new javax.swing.JLabel();
         jTextField9 = new javax.swing.JTextField();
@@ -224,23 +224,23 @@ public class TelaCadastroProfessor extends javax.swing.JFrame {
         nameLabel6.setForeground(new java.awt.Color(51, 51, 255));
         nameLabel6.setText("Email:");
 
-        Avanca1.setBackground(new java.awt.Color(0, 102, 102));
-        Avanca1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        Avanca1.setForeground(new java.awt.Color(255, 255, 255));
-        Avanca1.setText("Cadastrar");
-        Avanca1.addActionListener(new java.awt.event.ActionListener() {
+        btCadastroProf.setBackground(new java.awt.Color(0, 102, 102));
+        btCadastroProf.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        btCadastroProf.setForeground(new java.awt.Color(255, 255, 255));
+        btCadastroProf.setText("Cadastrar");
+        btCadastroProf.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Avanca1ActionPerformed(evt);
+                btCadastroProfActionPerformed(evt);
             }
         });
 
-        Avanca.setBackground(new java.awt.Color(0, 102, 102));
-        Avanca.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        Avanca.setForeground(new java.awt.Color(255, 255, 255));
-        Avanca.setText("Voltar");
-        Avanca.addActionListener(new java.awt.event.ActionListener() {
+        btVoltarCP.setBackground(new java.awt.Color(0, 102, 102));
+        btVoltarCP.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        btVoltarCP.setForeground(new java.awt.Color(255, 255, 255));
+        btVoltarCP.setText("Voltar");
+        btVoltarCP.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                AvancaActionPerformed(evt);
+                btVoltarCPActionPerformed(evt);
             }
         });
 
@@ -585,9 +585,9 @@ public class TelaCadastroProfessor extends javax.swing.JFrame {
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(Avanca, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btVoltarCP, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(Avanca1, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btCadastroProf, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(53, 53, 53))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -654,8 +654,8 @@ public class TelaCadastroProfessor extends javax.swing.JFrame {
                     .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 21, Short.MAX_VALUE)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Avanca1, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Avanca, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(btCadastroProf, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btVoltarCP, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(31, 31, 31))
         );
 
@@ -694,17 +694,19 @@ public class TelaCadastroProfessor extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_boxUFActionPerformed
 
-    private void Avanca1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Avanca1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Avanca1ActionPerformed
+    private void btCadastroProfActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btCadastroProfActionPerformed
+        TelaLog t = new TelaLog();
+        t.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_btCadastroProfActionPerformed
 
-    private void AvancaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AvancaActionPerformed
+    private void btVoltarCPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btVoltarCPActionPerformed
 
         TelaLog t = new TelaLog();
         t.setVisible(true);
         dispose();
 
-    }//GEN-LAST:event_AvancaActionPerformed
+    }//GEN-LAST:event_btVoltarCPActionPerformed
 
     private void boxDocUFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boxDocUFActionPerformed
           boxUF.removeAllItems();
@@ -762,11 +764,11 @@ public class TelaCadastroProfessor extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton Avanca;
-    private javax.swing.JButton Avanca1;
     private javax.swing.JComboBox<String> boxDocUF;
     private javax.swing.JComboBox<String> boxExpPFormaAcad;
     private javax.swing.JComboBox<String> boxUF;
+    private javax.swing.JButton btCadastroProf;
+    private javax.swing.JButton btVoltarCP;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;

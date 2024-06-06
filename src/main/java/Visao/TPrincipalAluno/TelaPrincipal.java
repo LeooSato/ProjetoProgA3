@@ -59,7 +59,7 @@ public class TelaPrincipal extends javax.swing.JFrame  {
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 610, Short.MAX_VALUE)
+            .addGap(0, 606, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -121,6 +121,11 @@ public class TelaPrincipal extends javax.swing.JFrame  {
         jMenuBar1.add(jMenu4);
 
         jMenu1.setText("Finaceiro");
+        jMenu1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jMenu1MouseClicked(evt);
+            }
+        });
         jMenuBar1.add(jMenu1);
 
         jMenu2.setText("Pesquisar");
@@ -181,6 +186,11 @@ public class TelaPrincipal extends javax.swing.JFrame  {
        
     }//GEN-LAST:event_jMenu4ActionPerformed
 
+    private void jMenu1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenu1MouseClicked
+        TelaFinanceiro t = new TelaFinanceiro();
+         t.setVisible(true);
+    }//GEN-LAST:event_jMenu1MouseClicked
+
     /**
      *
      * @param args
@@ -232,4 +242,8 @@ public class TelaPrincipal extends javax.swing.JFrame  {
     private javax.swing.JMenuItem menuLivros;
     private javax.swing.JMenuItem menuNotas;
     // End of variables declaration//GEN-END:variables
+
+    private TelaFinanceiro TelaFinanceiro() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 }

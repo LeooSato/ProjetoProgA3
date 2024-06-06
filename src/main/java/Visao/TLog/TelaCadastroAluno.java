@@ -38,7 +38,7 @@ public class TelaCadastroAluno extends javax.swing.JFrame {
         nameLabel8 = new javax.swing.JLabel();
         jTextField7 = new javax.swing.JTextField();
         nameLabel9 = new javax.swing.JLabel();
-        Avanca = new javax.swing.JButton();
+        btVoltarCA = new javax.swing.JButton();
         nameLabel2 = new javax.swing.JLabel();
         jTextField13 = new javax.swing.JTextField();
         nameLabel13 = new javax.swing.JLabel();
@@ -49,7 +49,7 @@ public class TelaCadastroAluno extends javax.swing.JFrame {
         jPanel3 = new javax.swing.JPanel();
         jTextField21 = new javax.swing.JTextField();
         jTextField22 = new javax.swing.JTextField();
-        Avanca1 = new javax.swing.JButton();
+        btCadastroAluno = new javax.swing.JButton();
         jPanel4 = new javax.swing.JPanel();
         nameLabel10 = new javax.swing.JLabel();
         jTextField9 = new javax.swing.JTextField();
@@ -201,13 +201,13 @@ public class TelaCadastroAluno extends javax.swing.JFrame {
         nameLabel9.setForeground(new java.awt.Color(51, 51, 255));
         nameLabel9.setText("Email:");
 
-        Avanca.setBackground(new java.awt.Color(0, 102, 102));
-        Avanca.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        Avanca.setForeground(new java.awt.Color(255, 255, 255));
-        Avanca.setText("Voltar");
-        Avanca.addActionListener(new java.awt.event.ActionListener() {
+        btVoltarCA.setBackground(new java.awt.Color(0, 102, 102));
+        btVoltarCA.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        btVoltarCA.setForeground(new java.awt.Color(255, 255, 255));
+        btVoltarCA.setText("Voltar");
+        btVoltarCA.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                AvancaActionPerformed(evt);
+                btVoltarCAActionPerformed(evt);
             }
         });
 
@@ -265,13 +265,13 @@ public class TelaCadastroAluno extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        Avanca1.setBackground(new java.awt.Color(0, 102, 102));
-        Avanca1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        Avanca1.setForeground(new java.awt.Color(255, 255, 255));
-        Avanca1.setText("Cadastrar");
-        Avanca1.addActionListener(new java.awt.event.ActionListener() {
+        btCadastroAluno.setBackground(new java.awt.Color(0, 102, 102));
+        btCadastroAluno.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        btCadastroAluno.setForeground(new java.awt.Color(255, 255, 255));
+        btCadastroAluno.setText("Cadastrar");
+        btCadastroAluno.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Avanca1ActionPerformed(evt);
+                btCadastroAlunoActionPerformed(evt);
             }
         });
 
@@ -531,9 +531,9 @@ public class TelaCadastroAluno extends javax.swing.JFrame {
                         .addGap(0, 0, Short.MAX_VALUE))))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(Avanca, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btVoltarCA, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Avanca1, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btCadastroAluno, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(53, 53, 53))
         );
         jPanel1Layout.setVerticalGroup(
@@ -591,8 +591,8 @@ public class TelaCadastroAluno extends javax.swing.JFrame {
                     .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 85, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Avanca, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Avanca1, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(btVoltarCA, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btCadastroAluno, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(20, 20, 20))
         );
 
@@ -623,14 +623,14 @@ public class TelaCadastroAluno extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jRadioButton2ActionPerformed
 
-    private void AvancaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AvancaActionPerformed
+    private void btVoltarCAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btVoltarCAActionPerformed
        
         
        TelaLog t = new TelaLog();
        t.setVisible(true);
        this.dispose();
        
-    }//GEN-LAST:event_AvancaActionPerformed
+    }//GEN-LAST:event_btVoltarCAActionPerformed
 
     private void jComboBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox2ActionPerformed
         // TODO add your handling code here:
@@ -640,9 +640,9 @@ public class TelaCadastroAluno extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField2ActionPerformed
 
-    private void Avanca1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Avanca1ActionPerformed
+    private void btCadastroAlunoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btCadastroAlunoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_Avanca1ActionPerformed
+    }//GEN-LAST:event_btCadastroAlunoActionPerformed
 
     private void jComboBox3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox3ActionPerformed
         // TODO add your handling code here:
@@ -699,8 +699,8 @@ public class TelaCadastroAluno extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton Avanca;
-    private javax.swing.JButton Avanca1;
+    private javax.swing.JButton btCadastroAluno;
+    private javax.swing.JButton btVoltarCA;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JComboBox<String> jComboBox2;
     private javax.swing.JComboBox<String> jComboBox3;

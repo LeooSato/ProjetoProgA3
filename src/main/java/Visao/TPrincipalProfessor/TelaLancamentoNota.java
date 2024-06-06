@@ -39,7 +39,7 @@ public class TelaLancamentoNota extends javax.swing.JFrame {
         jLabel7 = new javax.swing.JLabel();
         jScrollPane6 = new javax.swing.JScrollPane();
         jTextPane6 = new javax.swing.JTextPane();
-        jButton1 = new javax.swing.JButton();
+        btLancarNotasProf = new javax.swing.JButton();
         jLabel8 = new javax.swing.JLabel();
         jTextField1 = new javax.swing.JTextField();
         jTextField4 = new javax.swing.JTextField();
@@ -84,12 +84,12 @@ public class TelaLancamentoNota extends javax.swing.JFrame {
         jTextPane6.setBackground(new java.awt.Color(255, 255, 255));
         jScrollPane6.setViewportView(jTextPane6);
 
-        jButton1.setBackground(new java.awt.Color(0, 102, 102));
-        jButton1.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
-        jButton1.setText("Lançar");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btLancarNotasProf.setBackground(new java.awt.Color(0, 102, 102));
+        btLancarNotasProf.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        btLancarNotasProf.setText("Lançar");
+        btLancarNotasProf.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btLancarNotasProfActionPerformed(evt);
             }
         });
 
@@ -116,7 +116,7 @@ public class TelaLancamentoNota extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(btLancarNotasProf, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jLabel5)
@@ -186,7 +186,7 @@ public class TelaLancamentoNota extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(30, 30, 30)
-                .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btLancarNotasProf, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGap(18, 18, 18))
         );
 
@@ -205,9 +205,9 @@ public class TelaLancamentoNota extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btLancarNotasProfActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btLancarNotasProfActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_btLancarNotasProfActionPerformed
 
     /**
      * @param args the command line arguments
@@ -248,7 +248,7 @@ public class TelaLancamentoNota extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton btLancarNotasProf;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
