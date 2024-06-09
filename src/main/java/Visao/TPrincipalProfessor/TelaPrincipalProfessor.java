@@ -6,22 +6,24 @@ package Visao.TPrincipalProfessor;
 
 import Visao.TPrincipalAluno.*;
 import Visao.TLog.TelaLog;
+import Visao.TModels.Professor;
 import javax.swing.JPanel;
 
 import Visao.TPrincipalAluno.TelaCursos_Materias;
 import javax.swing.JOptionPane;
 
-/**
- *
- * @author cleis
- */
+public class TelaPrincipalProfessor extends javax.swing.JFrame  {
 
-public class TelaPrincipal extends javax.swing.JFrame  {
+    private Professor professor;
 
-    /**
-     * Creates new form TelaPrincipal
-     */
-    public TelaPrincipal() {
+    public TelaPrincipalProfessor(Professor professor) {
+        this.professor = professor;
+        initComponents();
+        // Inicialize os componentes com os dados do professor, se necessário
+        // Exemplo: jLabelNome.setText(professor.getNome());
+    }
+
+    public TelaPrincipalProfessor() {
         initComponents();
     }
 
@@ -39,7 +41,6 @@ public class TelaPrincipal extends javax.swing.JFrame  {
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu4 = new javax.swing.JMenu();
         menuCursos = new javax.swing.JMenuItem();
-        MenuCalendario = new javax.swing.JMenuItem();
         menuNotas = new javax.swing.JMenuItem();
         menuLivros = new javax.swing.JMenuItem();
         jMenuItem1 = new javax.swing.JMenuItem();
@@ -73,7 +74,6 @@ public class TelaPrincipal extends javax.swing.JFrame  {
             .addComponent(jPanel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        jMenuBar1.setBackground(new java.awt.Color(255, 255, 255));
         jMenuBar1.setForeground(new java.awt.Color(0, 0, 204));
 
         jMenu4.setText("Aquivos");
@@ -90,14 +90,6 @@ public class TelaPrincipal extends javax.swing.JFrame  {
             }
         });
         jMenu4.add(menuCursos);
-
-        MenuCalendario.setText("Calendario");
-        MenuCalendario.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                MenuCalendarioActionPerformed(evt);
-            }
-        });
-        jMenu4.add(MenuCalendario);
 
         menuNotas.setText("Lancamento de Notas");
         menuNotas.addActionListener(new java.awt.event.ActionListener() {
@@ -158,11 +150,6 @@ public class TelaPrincipal extends javax.swing.JFrame  {
         
     }//GEN-LAST:event_menuCursosActionPerformed
 
-    private void MenuCalendarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MenuCalendarioActionPerformed
-         TelaCalendario t = new TelaCalendario();
-         t.setVisible(true);
-    }//GEN-LAST:event_MenuCalendarioActionPerformed
-
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
         int dialogResult = JOptionPane.showConfirmDialog(null, "Deseja realmente sair?", "Confirmação de Saída", JOptionPane.YES_NO_OPTION);
         if (dialogResult == JOptionPane.YES_OPTION) {
@@ -196,28 +183,29 @@ public class TelaPrincipal extends javax.swing.JFrame  {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(TelaPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TelaPrincipalProfessor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(TelaPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TelaPrincipalProfessor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(TelaPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TelaPrincipalProfessor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(TelaPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TelaPrincipalProfessor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
          java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new TelaPrincipal().setVisible(true);
+                new TelaPrincipalProfessor().setVisible(true);
               
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JMenuItem MenuCalendario;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenu jMenu4;

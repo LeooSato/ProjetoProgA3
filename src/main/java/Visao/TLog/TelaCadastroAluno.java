@@ -30,18 +30,14 @@ public class TelaCadastroAluno extends javax.swing.JFrame {
         jRadioButton3 = new javax.swing.JRadioButton();
         jTextField3 = new javax.swing.JTextField();
         nameLabel5 = new javax.swing.JLabel();
-        jTextField6 = new javax.swing.JTextField();
         jComboBox1 = new javax.swing.JComboBox<>();
         nameLabel7 = new javax.swing.JLabel();
-        jComboBox2 = new javax.swing.JComboBox<>();
-        nameLabel4 = new javax.swing.JLabel();
         nameLabel8 = new javax.swing.JLabel();
         jTextField7 = new javax.swing.JTextField();
         nameLabel9 = new javax.swing.JLabel();
         btVoltarCA = new javax.swing.JButton();
         nameLabel2 = new javax.swing.JLabel();
         jTextField13 = new javax.swing.JTextField();
-        nameLabel13 = new javax.swing.JLabel();
         jTextField18 = new javax.swing.JTextField();
         jTextField19 = new javax.swing.JTextField();
         nameLabel15 = new javax.swing.JLabel();
@@ -52,27 +48,9 @@ public class TelaCadastroAluno extends javax.swing.JFrame {
         btCadastroAluno = new javax.swing.JButton();
         jPanel4 = new javax.swing.JPanel();
         nameLabel10 = new javax.swing.JLabel();
-        jTextField9 = new javax.swing.JTextField();
-        nameLabel11 = new javax.swing.JLabel();
         jTextField10 = new javax.swing.JTextField();
-        nameLabel12 = new javax.swing.JLabel();
-        jTextField11 = new javax.swing.JTextField();
-        jTextField12 = new javax.swing.JTextField();
-        nameLabel14 = new javax.swing.JLabel();
-        jComboBox3 = new javax.swing.JComboBox<>();
-        nameLabel16 = new javax.swing.JLabel();
-        jTextField16 = new javax.swing.JTextField();
         nameLabel18 = new javax.swing.JLabel();
-        nameLabel17 = new javax.swing.JLabel();
-        jTextField17 = new javax.swing.JTextField();
-        nameLabel19 = new javax.swing.JLabel();
-        jTextField23 = new javax.swing.JTextField();
-        nameLabel20 = new javax.swing.JLabel();
-        jTextField24 = new javax.swing.JTextField();
-        nameLabel23 = new javax.swing.JLabel();
         jTextField25 = new javax.swing.JTextField();
-        nameLabel24 = new javax.swing.JLabel();
-        jTextField26 = new javax.swing.JTextField();
         nameLabel21 = new javax.swing.JLabel();
         jTextField8 = new javax.swing.JTextField();
 
@@ -91,8 +69,6 @@ public class TelaCadastroAluno extends javax.swing.JFrame {
         jLabel1.setToolTipText("");
         jLabel1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
-        jTextField2.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField2.setForeground(new java.awt.Color(0, 0, 0));
         jTextField2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField2ActionPerformed(evt);
@@ -113,11 +89,9 @@ public class TelaCadastroAluno extends javax.swing.JFrame {
         jPanel6.setName(""); // NOI18N
 
         jRadioButton1.setBackground(new java.awt.Color(255, 255, 255));
-        jRadioButton1.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton1.setText("Masculino");
 
         jRadioButton2.setBackground(new java.awt.Color(255, 255, 255));
-        jRadioButton2.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton2.setText("Feminino");
         jRadioButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -126,7 +100,6 @@ public class TelaCadastroAluno extends javax.swing.JFrame {
         });
 
         jRadioButton3.setBackground(new java.awt.Color(255, 255, 255));
-        jRadioButton3.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton3.setText("Outros");
         jRadioButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -157,15 +130,9 @@ public class TelaCadastroAluno extends javax.swing.JFrame {
                     .addComponent(jRadioButton3)))
         );
 
-        jTextField3.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField3.setForeground(new java.awt.Color(0, 0, 0));
-
         nameLabel5.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         nameLabel5.setForeground(new java.awt.Color(51, 51, 255));
         nameLabel5.setText("CEP:");
-
-        jTextField6.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField6.setForeground(new java.awt.Color(0, 0, 0));
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         jComboBox1.addActionListener(new java.awt.event.ActionListener() {
@@ -178,24 +145,9 @@ public class TelaCadastroAluno extends javax.swing.JFrame {
         nameLabel7.setForeground(new java.awt.Color(51, 51, 255));
         nameLabel7.setText("UF:");
 
-        jComboBox2.setForeground(new java.awt.Color(0, 0, 0));
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        jComboBox2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBox2ActionPerformed(evt);
-            }
-        });
-
-        nameLabel4.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        nameLabel4.setForeground(new java.awt.Color(51, 51, 255));
-        nameLabel4.setText("Curso:");
-
         nameLabel8.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         nameLabel8.setForeground(new java.awt.Color(51, 51, 255));
         nameLabel8.setText("Número de Matrícula:");
-
-        jTextField7.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField7.setForeground(new java.awt.Color(0, 0, 0));
 
         nameLabel9.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         nameLabel9.setForeground(new java.awt.Color(51, 51, 255));
@@ -215,35 +167,13 @@ public class TelaCadastroAluno extends javax.swing.JFrame {
         nameLabel2.setForeground(new java.awt.Color(51, 51, 255));
         nameLabel2.setText("Endereço:");
 
-        jTextField13.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField13.setForeground(new java.awt.Color(0, 0, 0));
-
-        nameLabel13.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        nameLabel13.setForeground(new java.awt.Color(51, 51, 255));
-        nameLabel13.setText("Bairro:");
-
-        jTextField18.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField18.setForeground(new java.awt.Color(0, 0, 0));
-
-        jTextField19.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField19.setForeground(new java.awt.Color(0, 0, 0));
-
         nameLabel15.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         nameLabel15.setForeground(new java.awt.Color(51, 51, 255));
         nameLabel15.setText("Telefone:");
 
-        jTextField20.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField20.setForeground(new java.awt.Color(0, 0, 0));
-
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createTitledBorder(null, "Senha:\n", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("sansserif", 1, 14), new java.awt.Color(0, 51, 255)), "", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("sansserif", 1, 10), new java.awt.Color(0, 0, 0))); // NOI18N
+        jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createTitledBorder(null, "Senha:\n", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("sansserif", 1, 14), new java.awt.Color(0, 51, 255)), "", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("sansserif", 1, 10))); // NOI18N
         jPanel3.setForeground(new java.awt.Color(255, 255, 255));
-
-        jTextField21.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField21.setForeground(new java.awt.Color(0, 0, 0));
-
-        jTextField22.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField22.setForeground(new java.awt.Color(0, 0, 0));
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -282,83 +212,9 @@ public class TelaCadastroAluno extends javax.swing.JFrame {
         nameLabel10.setForeground(new java.awt.Color(51, 51, 255));
         nameLabel10.setText("RG:");
 
-        jTextField9.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField9.setForeground(new java.awt.Color(0, 0, 0));
-
-        nameLabel11.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        nameLabel11.setForeground(new java.awt.Color(51, 51, 255));
-        nameLabel11.setText("Orgão expedidor:");
-
-        jTextField10.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField10.setForeground(new java.awt.Color(0, 0, 0));
-
-        nameLabel12.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        nameLabel12.setForeground(new java.awt.Color(51, 51, 255));
-        nameLabel12.setText("Data de expedição:");
-
-        jTextField11.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField11.setForeground(new java.awt.Color(0, 0, 0));
-
-        jTextField12.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField12.setForeground(new java.awt.Color(0, 0, 0));
-
-        nameLabel14.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        nameLabel14.setForeground(new java.awt.Color(51, 51, 255));
-        nameLabel14.setText("UF:");
-
-        jComboBox3.setForeground(new java.awt.Color(0, 0, 0));
-        jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        jComboBox3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBox3ActionPerformed(evt);
-            }
-        });
-
-        nameLabel16.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        nameLabel16.setForeground(new java.awt.Color(51, 51, 255));
-        nameLabel16.setText("Título de eleitor:");
-
-        jTextField16.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField16.setForeground(new java.awt.Color(0, 0, 0));
-
         nameLabel18.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         nameLabel18.setForeground(new java.awt.Color(51, 51, 255));
         nameLabel18.setText("CPF:");
-
-        nameLabel17.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        nameLabel17.setForeground(new java.awt.Color(51, 51, 255));
-        nameLabel17.setText("Zona eleitoral:");
-
-        jTextField17.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField17.setForeground(new java.awt.Color(0, 0, 0));
-
-        nameLabel19.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        nameLabel19.setForeground(new java.awt.Color(51, 51, 255));
-        nameLabel19.setText("Seção eleitoral:");
-
-        jTextField23.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField23.setForeground(new java.awt.Color(0, 0, 0));
-
-        nameLabel20.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        nameLabel20.setForeground(new java.awt.Color(51, 51, 255));
-        nameLabel20.setText("Data de emissão:");
-
-        jTextField24.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField24.setForeground(new java.awt.Color(0, 0, 0));
-
-        nameLabel23.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        nameLabel23.setForeground(new java.awt.Color(51, 51, 255));
-        nameLabel23.setText("Nome do pai");
-
-        jTextField25.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField25.setForeground(new java.awt.Color(0, 0, 0));
-
-        nameLabel24.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        nameLabel24.setForeground(new java.awt.Color(51, 51, 255));
-        nameLabel24.setText("Nome da mãe");
-
-        jTextField26.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField26.setForeground(new java.awt.Color(0, 0, 0));
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -367,103 +223,29 @@ public class TelaCadastroAluno extends javax.swing.JFrame {
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addGap(20, 20, 20)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(nameLabel10)
-                            .addComponent(nameLabel18)
-                            .addComponent(nameLabel16)
-                            .addComponent(jTextField25, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(48, 48, 48)
-                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel4Layout.createSequentialGroup()
-                                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(nameLabel17)
-                                    .addComponent(jTextField23))
-                                .addGap(48, 48, 48)
-                                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(nameLabel19, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jTextField16, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(48, 48, 48)
-                                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(nameLabel20)
-                                    .addComponent(jTextField24, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(122, 122, 122))
-                            .addGroup(jPanel4Layout.createSequentialGroup()
-                                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jPanel4Layout.createSequentialGroup()
-                                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                                .addComponent(jTextField9)
-                                                .addComponent(nameLabel11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                            .addComponent(nameLabel23))
-                                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addGroup(jPanel4Layout.createSequentialGroup()
-                                                .addGap(74, 74, 74)
-                                                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                    .addComponent(jTextField12, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                    .addComponent(nameLabel24)))
-                                            .addGroup(jPanel4Layout.createSequentialGroup()
-                                                .addGap(48, 48, 48)
-                                                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                    .addComponent(jTextField11, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                    .addComponent(nameLabel12))
-                                                .addGap(39, 39, 39)
-                                                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                    .addComponent(jComboBox3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                    .addComponent(nameLabel14)))))
-                                    .addComponent(jTextField26, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addComponent(jTextField17, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap())))
+                    .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(nameLabel10)
+                    .addComponent(nameLabel18)
+                    .addComponent(jTextField25, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addGap(18, 18, 18)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(nameLabel10)
-                    .addComponent(nameLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(nameLabel12)
-                    .addComponent(nameLabel14))
+                .addComponent(nameLabel10)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jComboBox3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(12, 12, 12)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(nameLabel18)
-                    .addComponent(nameLabel23)
-                    .addComponent(nameLabel24))
+                .addComponent(nameLabel18)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField26, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField25, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 12, Short.MAX_VALUE)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(nameLabel16, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(nameLabel17, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(nameLabel19, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(nameLabel20))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField16)
-                    .addComponent(jTextField23)
-                    .addComponent(jTextField24))
-                .addGap(41, 41, 41))
+                .addComponent(jTextField25, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         nameLabel21.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         nameLabel21.setForeground(new java.awt.Color(51, 51, 255));
         nameLabel21.setText("ID");
-
-        jTextField8.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField8.setForeground(new java.awt.Color(0, 0, 0));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -481,35 +263,22 @@ public class TelaCadastroAluno extends javax.swing.JFrame {
                                 .addGap(47, 47, 47)
                                 .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 192, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 253, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(nameLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                    .addComponent(nameLabel2)
-                                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                                        .addGap(170, 170, 170)
-                                                        .addComponent(nameLabel13)))
-                                                .addGap(129, 129, 129)
-                                                .addComponent(nameLabel5))
-                                            .addComponent(nameLabel4)
-                                            .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 253, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(nameLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, 253, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addGap(157, 157, 157))
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(jTextField13, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jTextField18, javax.swing.GroupLayout.PREFERRED_SIZE, 177, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)))
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(nameLabel7))))
-                        .addContainerGap(199, Short.MAX_VALUE))
+                                    .addComponent(jTextField13, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(nameLabel2))
+                                .addGap(18, 18, 18)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jTextField18, javax.swing.GroupLayout.PREFERRED_SIZE, 177, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(nameLabel5))
+                                .addGap(18, 18, 18)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(nameLabel7)
+                                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addContainerGap(347, Short.MAX_VALUE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
@@ -517,9 +286,13 @@ public class TelaCadastroAluno extends javax.swing.JFrame {
                                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(nameLabel21)))
-                            .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, 727, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(btVoltarCA, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(nameLabel21))
+                                .addGap(18, 18, 18)
+                                .addComponent(btCadastroAluno, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(nameLabel9)
@@ -527,14 +300,11 @@ public class TelaCadastroAluno extends javax.swing.JFrame {
                                 .addGap(31, 31, 31)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jTextField19, javax.swing.GroupLayout.PREFERRED_SIZE, 253, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(nameLabel15))))
-                        .addGap(0, 0, Short.MAX_VALUE))))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(btVoltarCA, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btCadastroAluno, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(53, 53, 53))
+                                    .addComponent(nameLabel15)))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(176, 176, 176)
+                                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(0, 142, Short.MAX_VALUE))))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -545,11 +315,7 @@ public class TelaCadastroAluno extends javax.swing.JFrame {
                 .addComponent(nameLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(nameLabel4)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(nameLabel8)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -564,13 +330,11 @@ public class TelaCadastroAluno extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(nameLabel7)
                     .addComponent(nameLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(nameLabel13)
                     .addComponent(nameLabel5))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jTextField18)
-                    .addComponent(jTextField6)
                     .addComponent(jTextField13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(29, 29, 29)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -580,26 +344,25 @@ public class TelaCadastroAluno extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jTextField20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jTextField19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(12, 12, 12)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(nameLabel21)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 85, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btVoltarCA, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btCadastroAluno, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(btVoltarCA, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btCadastroAluno, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(20, 20, 20))
         );
 
         jScrollPane1.setViewportView(jPanel1);
 
         getContentPane().add(jScrollPane1);
-        jScrollPane1.setBounds(0, 0, 860, 1070);
+        jScrollPane1.setBounds(0, 0, 860, 680);
 
         setSize(new java.awt.Dimension(868, 1106));
         setLocationRelativeTo(null);
@@ -632,10 +395,6 @@ public class TelaCadastroAluno extends javax.swing.JFrame {
        
     }//GEN-LAST:event_btVoltarCAActionPerformed
 
-    private void jComboBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jComboBox2ActionPerformed
-
     private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField2ActionPerformed
@@ -643,10 +402,6 @@ public class TelaCadastroAluno extends javax.swing.JFrame {
     private void btCadastroAlunoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btCadastroAlunoActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btCadastroAlunoActionPerformed
-
-    private void jComboBox3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jComboBox3ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -702,8 +457,6 @@ public class TelaCadastroAluno extends javax.swing.JFrame {
     private javax.swing.JButton btCadastroAluno;
     private javax.swing.JButton btVoltarCA;
     private javax.swing.JComboBox<String> jComboBox1;
-    private javax.swing.JComboBox<String> jComboBox2;
-    private javax.swing.JComboBox<String> jComboBox3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel3;
@@ -714,44 +467,24 @@ public class TelaCadastroAluno extends javax.swing.JFrame {
     private javax.swing.JRadioButton jRadioButton3;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextField jTextField10;
-    private javax.swing.JTextField jTextField11;
-    private javax.swing.JTextField jTextField12;
     private javax.swing.JTextField jTextField13;
-    private javax.swing.JTextField jTextField16;
-    private javax.swing.JTextField jTextField17;
     private javax.swing.JTextField jTextField18;
     private javax.swing.JTextField jTextField19;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField20;
     private javax.swing.JTextField jTextField21;
     private javax.swing.JTextField jTextField22;
-    private javax.swing.JTextField jTextField23;
-    private javax.swing.JTextField jTextField24;
     private javax.swing.JTextField jTextField25;
-    private javax.swing.JTextField jTextField26;
     private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField6;
     private javax.swing.JTextField jTextField7;
     private javax.swing.JTextField jTextField8;
-    private javax.swing.JTextField jTextField9;
     private javax.swing.JLabel nameLabel;
     private javax.swing.JLabel nameLabel1;
     private javax.swing.JLabel nameLabel10;
-    private javax.swing.JLabel nameLabel11;
-    private javax.swing.JLabel nameLabel12;
-    private javax.swing.JLabel nameLabel13;
-    private javax.swing.JLabel nameLabel14;
     private javax.swing.JLabel nameLabel15;
-    private javax.swing.JLabel nameLabel16;
-    private javax.swing.JLabel nameLabel17;
     private javax.swing.JLabel nameLabel18;
-    private javax.swing.JLabel nameLabel19;
     private javax.swing.JLabel nameLabel2;
-    private javax.swing.JLabel nameLabel20;
     private javax.swing.JLabel nameLabel21;
-    private javax.swing.JLabel nameLabel23;
-    private javax.swing.JLabel nameLabel24;
-    private javax.swing.JLabel nameLabel4;
     private javax.swing.JLabel nameLabel5;
     private javax.swing.JLabel nameLabel7;
     private javax.swing.JLabel nameLabel8;

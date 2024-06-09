@@ -1,14 +1,16 @@
-
 package Visao.TLog;
 
 import Visao.TPrincipalAluno.TelaPrincipal;
 import java.awt.Color;
 import java.awt.event.KeyEvent;
+import Visao.TDatabase.DAO;
+import Visao.TModels.Aluno;
+import Visao.TModels.Professor;
+import Visao.TPrincipalAluno.TelaPrincipal;
 
-/**
- *
- * @author cleis
- */
+import Visao.TPrincipalProfessor.TelaPrincipalProfessor;
+import javax.swing.JOptionPane;
+
 public class TelaLog extends javax.swing.JFrame {
 
     /**
@@ -16,17 +18,18 @@ public class TelaLog extends javax.swing.JFrame {
      */
     public TelaLog() {
         initComponents();
-        
-                esqueceuSenha.addMouseListener(new java.awt.event.MouseAdapter() {
-                 public void mouseEntered(java.awt.event.MouseEvent evt) {
-                    esqueceuSenha.setForeground(Color.BLUE);
-                }
 
-                public void mouseExited(java.awt.event.MouseEvent evt) {
-                    esqueceuSenha.setForeground(Color.BLACK);
-                }
-                });
+        esqueceuSenha.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                esqueceuSenha.setForeground(Color.BLUE);
+            }
+
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                esqueceuSenha.setForeground(Color.BLACK);
+            }
+        });
     }
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -163,22 +166,45 @@ public class TelaLog extends javax.swing.JFrame {
     }//GEN-LAST:event_txtUsuarioActionPerformed
 
     private void btCadastroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btCadastroActionPerformed
-        
+
         TelaEscolhaAlunoProfessor t = new TelaEscolhaAlunoProfessor();
         t.setVisible(true);
-       
+
     }//GEN-LAST:event_btCadastroActionPerformed
 
     private void btLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btLoginActionPerformed
 
-        TelaPrincipal t = new TelaPrincipal();
-        t.setVisible(true);
-        dispose();
-        
+        String email = txtUsuario.getText();
+        String senha = new String(txtSenha.getPassword()); // Para obter a senha do campo de senha
+
+        DAO DAO = new DAO();
+
+        Aluno aluno = DAO.getAlunoByEmailAndSenha(email, senha);
+        Professor professor = null;
+
+        if (aluno == null) {
+            professor = DAO.getProfessorByEmailAndSenha(email, senha);
+        }
+
+        if (aluno != null) {
+            // Login bem-sucedido como aluno
+            TelaPrincipal t = new TelaPrincipal(aluno); // Passa o objeto aluno para a tela principal
+            t.setVisible(true);
+            dispose();
+        } else if (professor != null) {
+            // Login bem-sucedido como professor
+            TelaPrincipalProfessor t = new TelaPrincipalProfessor(professor); // Passa o objeto professor para a tela principal
+            t.setVisible(true);
+            dispose();
+        } else {
+            // Login falhou
+            JOptionPane.showMessageDialog(this, "Email ou senha incorretos.", "Erro de Login", JOptionPane.ERROR_MESSAGE);
+        }
+
     }//GEN-LAST:event_btLoginActionPerformed
 
     private void txtSenhaKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtSenhaKeyPressed
-        if(evt.getKeyCode()==KeyEvent.VK_ENTER); //CONSIGO FAZER LOGIN APERTANDO ENTER
+        if (evt.getKeyCode() == KeyEvent.VK_ENTER); //CONSIGO FAZER LOGIN APERTANDO ENTER
     }//GEN-LAST:event_txtSenhaKeyPressed
 
     private void esqueceuSenhaMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_esqueceuSenhaMouseExited
@@ -188,7 +214,7 @@ public class TelaLog extends javax.swing.JFrame {
     }//GEN-LAST:event_esqueceuSenhaMouseExited
 
     private void esqueceuSenhaMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_esqueceuSenhaMouseEntered
-    
+
     }//GEN-LAST:event_esqueceuSenhaMouseEntered
 
     private void esqueceuSenhaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_esqueceuSenhaMouseClicked

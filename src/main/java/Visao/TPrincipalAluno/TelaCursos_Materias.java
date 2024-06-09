@@ -4,17 +4,40 @@
  */
 package Visao.TPrincipalAluno;
 
+import Visao.TDatabase.DAO;
+import Visao.TModels.Aluno;
+import Visao.TModels.Materia;
+import java.util.ArrayList;
+import javax.swing.DefaultComboBoxModel;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author cleis
  */
 public class TelaCursos_Materias extends javax.swing.JFrame {
 
-    /**
-     * Creates new form TelaCursos
-     */
+    private Aluno aluno;
+
+    public TelaCursos_Materias(Aluno aluno) {
+        this.aluno = aluno;
+        initComponents();
+        carregarMaterias();
+    }
+
     public TelaCursos_Materias() {
         initComponents();
+    }
+
+    private void carregarMaterias() {
+        DAO DAO = new DAO();
+        ArrayList<Materia> materias = DAO.getMateriasByAlunoId(aluno.getId());
+
+        DefaultComboBoxModel<String> model = new DefaultComboBoxModel<>();
+        for (Materia materia : materias) {
+            model.addElement(materia.getNome());
+        }
+        comboboxMaterias.setModel(model);
     }
 
     /**
@@ -27,72 +50,39 @@ public class TelaCursos_Materias extends javax.swing.JFrame {
     private void initComponents() {
 
         jScrollPane1 = new javax.swing.JScrollPane();
-        txtInformeMaterias = new javax.swing.JTextPane();
-        jButton1 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
-        jButton9 = new javax.swing.JButton();
-        jButton10 = new javax.swing.JButton();
-        jButton11 = new javax.swing.JButton();
-        jButton12 = new javax.swing.JButton();
-        jButton13 = new javax.swing.JButton();
-        jButton14 = new javax.swing.JButton();
-        jButton15 = new javax.swing.JButton();
-        jButton16 = new javax.swing.JButton();
-        jButton17 = new javax.swing.JButton();
+        txtAulas = new javax.swing.JTextPane();
+        comboboxMaterias = new javax.swing.JComboBox<>();
+        btnConsultarMaterias = new javax.swing.JButton();
+        jCalendar1 = new com.toedter.calendar.JCalendar();
+        btnConsultarLivros = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setResizable(false);
 
-        jScrollPane1.setViewportView(txtInformeMaterias);
+        jScrollPane1.setViewportView(txtAulas);
 
-        jButton1.setBackground(new java.awt.Color(0, 102, 102));
-        jButton1.setFont(new java.awt.Font("sansserif", 1, 13)); // NOI18N
-        jButton1.setText("Matemática");
+        comboboxMaterias.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        comboboxMaterias.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                comboboxMateriasActionPerformed(evt);
+            }
+        });
 
-        jButton7.setBackground(new java.awt.Color(0, 102, 102));
-        jButton7.setFont(new java.awt.Font("sansserif", 1, 13)); // NOI18N
-        jButton7.setText("Português");
+        btnConsultarMaterias.setText("Consultar Aulas");
+        btnConsultarMaterias.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnConsultarMateriasActionPerformed(evt);
+            }
+        });
 
-        jButton8.setBackground(new java.awt.Color(0, 102, 102));
-        jButton8.setFont(new java.awt.Font("sansserif", 1, 13)); // NOI18N
-        jButton8.setText("Fisica");
+        jCalendar1.setBackground(new java.awt.Color(255, 255, 255));
 
-        jButton9.setBackground(new java.awt.Color(0, 102, 102));
-        jButton9.setFont(new java.awt.Font("sansserif", 1, 13)); // NOI18N
-        jButton9.setText("Historia");
-
-        jButton10.setBackground(new java.awt.Color(0, 102, 102));
-        jButton10.setFont(new java.awt.Font("sansserif", 1, 13)); // NOI18N
-        jButton10.setText("Geografia");
-
-        jButton11.setBackground(new java.awt.Color(0, 102, 102));
-        jButton11.setFont(new java.awt.Font("sansserif", 1, 13)); // NOI18N
-        jButton11.setText("Educão Física");
-
-        jButton12.setBackground(new java.awt.Color(0, 102, 102));
-        jButton12.setFont(new java.awt.Font("sansserif", 1, 13)); // NOI18N
-        jButton12.setText("Artes");
-
-        jButton13.setBackground(new java.awt.Color(0, 102, 102));
-        jButton13.setFont(new java.awt.Font("sansserif", 1, 13)); // NOI18N
-        jButton13.setText("Espanlho");
-
-        jButton14.setBackground(new java.awt.Color(0, 102, 102));
-        jButton14.setFont(new java.awt.Font("sansserif", 1, 13)); // NOI18N
-        jButton14.setText("Inglês");
-
-        jButton15.setBackground(new java.awt.Color(0, 102, 102));
-        jButton15.setFont(new java.awt.Font("sansserif", 1, 13)); // NOI18N
-        jButton15.setText("Química");
-
-        jButton16.setBackground(new java.awt.Color(0, 102, 102));
-        jButton16.setFont(new java.awt.Font("sansserif", 1, 13)); // NOI18N
-        jButton16.setText("Sociologia");
-
-        jButton17.setBackground(new java.awt.Color(0, 102, 102));
-        jButton17.setFont(new java.awt.Font("sansserif", 1, 13)); // NOI18N
-        jButton17.setText("Filosofia");
+        btnConsultarLivros.setText("Consultar Livros");
+        btnConsultarLivros.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnConsultarLivrosActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -100,65 +90,67 @@ public class TelaCursos_Materias extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addComponent(jScrollPane1)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(btnConsultarLivros, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton10, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                        .addComponent(jButton12, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton11, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton13, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton14, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton15, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jButton16, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton17, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(197, 197, 197))
+                        .addComponent(btnConsultarMaterias, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(comboboxMaterias, javax.swing.GroupLayout.Alignment.TRAILING, 0, 316, Short.MAX_VALUE)
+                    .addComponent(jScrollPane1))
+                .addGap(3, 3, 3)
+                .addComponent(jCalendar1, javax.swing.GroupLayout.PREFERRED_SIZE, 311, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton10, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jCalendar1, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(comboboxMaterias, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton12, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton11, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton13, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton14, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton15, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton16, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton17, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(14, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnConsultarMaterias, javax.swing.GroupLayout.DEFAULT_SIZE, 40, Short.MAX_VALUE)
+                    .addComponent(btnConsultarLivros, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(26, 26, 26))
         );
 
-        setSize(new java.awt.Dimension(658, 447));
+        setSize(new java.awt.Dimension(658, 259));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnConsultarMateriasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnConsultarMateriasActionPerformed
+        DAO alunoDAO = new DAO();
+        String nomeMateria = (String) comboboxMaterias.getSelectedItem();
+        Materia materia = alunoDAO.getMateriaByNome(nomeMateria);
+        ArrayList<String> aulas = alunoDAO.getAulasByMateriaId(materia.getId());
+
+        StringBuilder aulasText = new StringBuilder();
+        for (String aula : aulas) {
+            aulasText.append(aula).append("\n");
+        }
+        txtAulas.setText(aulasText.toString());    }//GEN-LAST:event_btnConsultarMateriasActionPerformed
+
+    private void comboboxMateriasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comboboxMateriasActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_comboboxMateriasActionPerformed
+
+    private void btnConsultarLivrosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnConsultarLivrosActionPerformed
+        String nomeMateria = (String) comboboxMaterias.getSelectedItem();
+        if (nomeMateria != null) {
+            DAO alunoDAO = new DAO();
+            Materia materia = alunoDAO.getMateriaByNome(nomeMateria);
+            if (materia != null) {
+                TelaLivros telaLivros = new TelaLivros(aluno, materia.getId());
+                telaLivros.setVisible(true);
+            } else {
+                JOptionPane.showMessageDialog(this, "Matéria não encontrada.", "Erro", JOptionPane.ERROR_MESSAGE);
+            }
+        } else {
+            JOptionPane.showMessageDialog(this, "Selecione uma matéria.", "Erro", JOptionPane.ERROR_MESSAGE);
+        }    }//GEN-LAST:event_btnConsultarLivrosActionPerformed
 
     /**
      * @param args the command line arguments
@@ -197,19 +189,11 @@ public class TelaCursos_Materias extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton10;
-    private javax.swing.JButton jButton11;
-    private javax.swing.JButton jButton12;
-    private javax.swing.JButton jButton13;
-    private javax.swing.JButton jButton14;
-    private javax.swing.JButton jButton15;
-    private javax.swing.JButton jButton16;
-    private javax.swing.JButton jButton17;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
-    private javax.swing.JButton jButton9;
+    private javax.swing.JButton btnConsultarLivros;
+    private javax.swing.JButton btnConsultarMaterias;
+    private javax.swing.JComboBox<String> comboboxMaterias;
+    private com.toedter.calendar.JCalendar jCalendar1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextPane txtInformeMaterias;
+    private javax.swing.JTextPane txtAulas;
     // End of variables declaration//GEN-END:variables
 }
