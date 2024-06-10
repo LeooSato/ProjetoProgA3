@@ -31,7 +31,7 @@ public class TelaLivros extends javax.swing.JFrame {
 
     private void carregarLivros() {
         DAO dao = new DAO();
-        ArrayList<Livro> livros = dao.getLivrosByMateriaId(materiaId);
+        ArrayList<Livro> livros = dao.getLivrosByAlunoId(aluno.getId());
 
         DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
         model.setRowCount(0); // Limpa a tabela

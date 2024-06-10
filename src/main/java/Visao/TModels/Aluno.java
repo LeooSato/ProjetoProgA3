@@ -31,7 +31,6 @@ public class Aluno {
         this.senha = senha;
         this.numeroMatricula = numeroMatricula;
     }
-    // Getters e Setters
     public int getId() {
         return id;
     }

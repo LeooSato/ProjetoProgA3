@@ -1,7 +1,6 @@
 package Visao.TModels;
 
 public class Materia {
-
     private int id;
     private String nome;
     private int idProfessor;
@@ -40,5 +39,14 @@ public class Materia {
 
     public void setIdProfessor(int idProfessor) {
         this.idProfessor = idProfessor;
+    }
+
+    @Override
+    public String toString() {
+        return "Materia{" +
+                "id=" + id +
+                ", nome='" + nome + '\'' +
+                ", idProfessor=" + idProfessor +
+                '}';
     }
 }

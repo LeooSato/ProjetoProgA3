@@ -7,7 +7,7 @@ package Visao.TPrincipalAluno;
 import Visao.TDatabase.DAO;
 import Visao.TModels.Aluno;
 import Visao.TModels.Materia;
-import Visao.TModels.Nota;
+import Visao.TModels.Nota;  // Certifique-se de importar a classe Nota
 import java.util.ArrayList;
 import javax.swing.DefaultComboBoxModel;
 
@@ -37,7 +37,7 @@ public class TelaBoletimEscolar extends javax.swing.JFrame {
         for (Materia materia : materias) {
             model.addElement(materia.getNome());
         }
-                jComboBox1.setModel(model);
+        jComboBox1.setModel(model);
     }
 
     /**
@@ -236,14 +236,25 @@ public class TelaBoletimEscolar extends javax.swing.JFrame {
         DAO DAO = new DAO();
         String nomeMateria = (String) jComboBox1.getSelectedItem();
         Materia materia = DAO.getMateriaByNome(nomeMateria);
-        Nota nota = DAO.getNotasByAlunoIdAndMateriaId(aluno.getId(), materia.getId());
+
+        Nota nota1 = DAO.getNotaByAlunoIdMateriaIdSemestre(aluno.getId(), materia.getId(), 1);
+        Nota nota2 = DAO.getNotaByAlunoIdMateriaIdSemestre(aluno.getId(), materia.getId(), 2);
+        Nota nota3 = DAO.getNotaByAlunoIdMateriaIdSemestre(aluno.getId(), materia.getId(), 3);
+        Nota nota4 = DAO.getNotaByAlunoIdMateriaIdSemestre(aluno.getId(), materia.getId(), 4);
 
         txtNomeMateria.setText(nomeMateria);
-        txtNota1.setText(String.valueOf(nota.getNota1()));
-        txtNota2.setText(String.valueOf(nota.getNota2()));
-        txtNota3.setText(String.valueOf(nota.getNota3()));
-        txtNota4.setText(String.valueOf(nota.getNota4()));
-        txtMedia.setText(String.valueOf(nota.getMedia()));
+        txtNota1.setText(nota1 != null ? String.valueOf(nota1.getNota()) : "0");
+        txtNota2.setText(nota2 != null ? String.valueOf(nota2.getNota()) : "0");
+        txtNota3.setText(nota3 != null ? String.valueOf(nota3.getNota()) : "0");
+        txtNota4.setText(nota4 != null ? String.valueOf(nota4.getNota()) : "0");
+
+        double nota1Valor = nota1 != null ? nota1.getNota() : 0;
+        double nota2Valor = nota2 != null ? nota2.getNota() : 0;
+        double nota3Valor = nota3 != null ? nota3.getNota() : 0;
+        double nota4Valor = nota4 != null ? nota4.getNota() : 0;
+
+        double media = (nota1Valor + nota2Valor + nota3Valor + nota4Valor) / 4;
+        txtMedia.setText(String.valueOf(media));
     }//GEN-LAST:event_btConsultarBoletinActionPerformed
 
     private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed

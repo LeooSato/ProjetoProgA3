@@ -16,6 +16,10 @@ public class Professor {
     private String senha;
     private String registro;
 
+    public Professor() {
+        // Construtor padrão
+    }
+
     public Professor(int id, String nome, String dataNascimento, String sexo, String endereco, String cep, String uf, String email, String telefone, String rg, String cpf, String senha, String registro) {
         this.id = id;
         this.nome = nome;
@@ -32,7 +36,6 @@ public class Professor {
         this.registro = registro;
     }
 
-    // Getters e Setters
     public int getId() {
         return id;
     }
