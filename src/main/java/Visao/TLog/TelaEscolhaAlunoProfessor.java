@@ -27,33 +27,45 @@ public class TelaEscolhaAlunoProfessor extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
-        AlunoButton = new javax.swing.JButton();
+        btEscolhaProfessor = new javax.swing.JButton();
+        btEscolhaAluno = new javax.swing.JButton();
+        BtVoltarEscolhaP_A = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Escolha");
         setResizable(false);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Módulo", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("sansserif", 1, 12), new java.awt.Color(0, 0, 0))); // NOI18N
+        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Módulo", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("sansserif", 1, 12), new java.awt.Color(0, 0, 204))); // NOI18N
+        jPanel1.setForeground(new java.awt.Color(0, 0, 204));
 
-        jButton1.setBackground(new java.awt.Color(102, 0, 153));
-        jButton1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("Professor");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btEscolhaProfessor.setBackground(new java.awt.Color(0, 102, 102));
+        btEscolhaProfessor.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        btEscolhaProfessor.setForeground(new java.awt.Color(255, 255, 255));
+        btEscolhaProfessor.setText("Professor");
+        btEscolhaProfessor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btEscolhaProfessorActionPerformed(evt);
             }
         });
 
-        AlunoButton.setBackground(new java.awt.Color(102, 0, 153));
-        AlunoButton.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        AlunoButton.setForeground(new java.awt.Color(255, 255, 255));
-        AlunoButton.setText("Aluno");
-        AlunoButton.addActionListener(new java.awt.event.ActionListener() {
+        btEscolhaAluno.setBackground(new java.awt.Color(0, 102, 102));
+        btEscolhaAluno.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        btEscolhaAluno.setForeground(new java.awt.Color(255, 255, 255));
+        btEscolhaAluno.setText("Aluno");
+        btEscolhaAluno.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                AlunoButtonActionPerformed(evt);
+                btEscolhaAlunoActionPerformed(evt);
+            }
+        });
+
+        BtVoltarEscolhaP_A.setBackground(new java.awt.Color(0, 102, 102));
+        BtVoltarEscolhaP_A.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
+        BtVoltarEscolhaP_A.setForeground(new java.awt.Color(255, 255, 255));
+        BtVoltarEscolhaP_A.setText("Voltar");
+        BtVoltarEscolhaP_A.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtVoltarEscolhaP_AActionPerformed(evt);
             }
         });
 
@@ -62,46 +74,58 @@ public class TelaEscolhaAlunoProfessor extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(100, 100, 100)
+                .addGap(82, 82, 82)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(AlunoButton, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(100, Short.MAX_VALUE))
+                    .addComponent(btEscolhaAluno, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btEscolhaProfessor, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(128, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(BtVoltarEscolhaP_A, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(50, 50, 50)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 36, Short.MAX_VALUE)
-                .addComponent(AlunoButton, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(50, 50, 50))
+                .addContainerGap(36, Short.MAX_VALUE)
+                .addComponent(btEscolhaProfessor, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(28, 28, 28)
+                .addComponent(btEscolhaAluno, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(29, 29, 29)
+                .addComponent(BtVoltarEscolhaP_A, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         setSize(new java.awt.Dimension(425, 321));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btEscolhaProfessorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btEscolhaProfessorActionPerformed
        
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_btEscolhaProfessorActionPerformed
 
-    private void AlunoButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AlunoButtonActionPerformed
+    private void btEscolhaAlunoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btEscolhaAlunoActionPerformed
         TelaCadastroAluno t = new TelaCadastroAluno();
         t.setVisible(true);
         this.dispose();
-    }//GEN-LAST:event_AlunoButtonActionPerformed
+    }//GEN-LAST:event_btEscolhaAlunoActionPerformed
+
+    private void BtVoltarEscolhaP_AActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtVoltarEscolhaP_AActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BtVoltarEscolhaP_AActionPerformed
 
     /**
      * @param args the command line arguments
@@ -140,8 +164,9 @@ public class TelaEscolhaAlunoProfessor extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton AlunoButton;
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton BtVoltarEscolhaP_A;
+    private javax.swing.JButton btEscolhaAluno;
+    private javax.swing.JButton btEscolhaProfessor;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }

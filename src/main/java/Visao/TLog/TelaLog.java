@@ -1,13 +1,16 @@
-
 package Visao.TLog;
 
-import Visao.TPrincipal.TelaPrincipal;
+import Visao.TPrincipalAluno.TelaPrincipal;
+import java.awt.Color;
 import java.awt.event.KeyEvent;
+import Visao.TDatabase.DAO;
+import Visao.TModels.Aluno;
+import Visao.TModels.Professor;
+import Visao.TPrincipalAluno.TelaPrincipal;
 
-/**
- *
- * @author cleis
- */
+import Visao.TPrincipalProfessor.TelaPrincipalProfessor;
+import javax.swing.JOptionPane;
+
 public class TelaLog extends javax.swing.JFrame {
 
     /**
@@ -15,6 +18,16 @@ public class TelaLog extends javax.swing.JFrame {
      */
     public TelaLog() {
         initComponents();
+
+        esqueceuSenha.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                esqueceuSenha.setForeground(Color.BLUE);
+            }
+
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                esqueceuSenha.setForeground(Color.BLACK);
+            }
+        });
     }
 
     /**
@@ -29,11 +42,11 @@ public class TelaLog extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jPasswordField1 = new javax.swing.JPasswordField();
-        jLabel3 = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
+        txtUsuario = new javax.swing.JTextField();
+        txtSenha = new javax.swing.JPasswordField();
+        esqueceuSenha = new javax.swing.JLabel();
+        btLogin = new javax.swing.JButton();
+        btCadastro = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Tela de Login");
@@ -50,36 +63,49 @@ public class TelaLog extends javax.swing.JFrame {
         jLabel2.setForeground(new java.awt.Color(0, 0, 255));
         jLabel2.setText("Senha:");
 
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+        txtUsuario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
+                txtUsuarioActionPerformed(evt);
             }
         });
 
-        jPasswordField1.addKeyListener(new java.awt.event.KeyAdapter() {
+        txtSenha.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
-                jPasswordField1KeyPressed(evt);
+                txtSenhaKeyPressed(evt);
             }
         });
 
-        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel3.setText("Esqueceu a senha?");
-
-        jButton2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(0, 0, 255));
-        jButton2.setText("Login");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+        esqueceuSenha.setForeground(new java.awt.Color(0, 0, 0));
+        esqueceuSenha.setText("Esqueceu a senha?");
+        esqueceuSenha.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                esqueceuSenhaMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                esqueceuSenhaMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                esqueceuSenhaMouseExited(evt);
             }
         });
 
-        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(0, 0, 255));
-        jButton1.setText("Cadastrar");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btLogin.setBackground(new java.awt.Color(0, 102, 102));
+        btLogin.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btLogin.setForeground(new java.awt.Color(255, 255, 255));
+        btLogin.setText("Login");
+        btLogin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btLoginActionPerformed(evt);
+            }
+        });
+
+        btCadastro.setBackground(new java.awt.Color(0, 102, 102));
+        btCadastro.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btCadastro.setForeground(new java.awt.Color(255, 255, 255));
+        btCadastro.setText("Cadastrar");
+        btCadastro.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btCadastroActionPerformed(evt);
             }
         });
 
@@ -91,20 +117,20 @@ public class TelaLog extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btCadastro, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(71, 71, 71))
                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
                         .addGap(100, 100, 100)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jPasswordField1, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jTextField1)
+                            .addComponent(txtSenha, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(txtUsuario)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(esqueceuSenha, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(0, 41, Short.MAX_VALUE)))))
                 .addGap(89, 89, 89))
         );
@@ -114,54 +140,87 @@ public class TelaLog extends javax.swing.JFrame {
                 .addGap(100, 100, 100)
                 .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(txtUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel2)
-                .addGap(18, 18, 18)
-                .addComponent(jPasswordField1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(12, 12, 12)
-                .addComponent(jLabel3)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(48, 48, 48))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(txtSenha, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(esqueceuSenha)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btCadastro, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(48, 48, 48))
         );
 
         getContentPane().add(jPanel1);
         jPanel1.setBounds(0, -5, 470, 370);
 
-        setSize(new java.awt.Dimension(477, 405));
+        setSize(new java.awt.Dimension(477, 393));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+    private void txtUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtUsuarioActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
+    }//GEN-LAST:event_txtUsuarioActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        
+    private void btCadastroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btCadastroActionPerformed
+
         TelaEscolhaAlunoProfessor t = new TelaEscolhaAlunoProfessor();
         t.setVisible(true);
-        this.dispose();
-    }//GEN-LAST:event_jButton1ActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-       
-       
-        TelaPrincipal t = new TelaPrincipal();
+    }//GEN-LAST:event_btCadastroActionPerformed
+
+    private void btLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btLoginActionPerformed
+
+        String email = txtUsuario.getText();
+        String senha = new String(txtSenha.getPassword()); // Para obter a senha do campo de senha
+
+        DAO DAO = new DAO();
+
+        Aluno aluno = DAO.getAlunoByEmailAndSenha(email, senha);
+        Professor professor = null;
+
+        if (aluno == null) {
+            professor = DAO.getProfessorByEmailAndSenha(email, senha);
+        }
+
+        if (aluno != null) {
+            // Login bem-sucedido como aluno
+            TelaPrincipal t = new TelaPrincipal(aluno); // Passa o objeto aluno para a tela principal
+            t.setVisible(true);
+            dispose();
+        } else if (professor != null) {
+            // Login bem-sucedido como professor
+            TelaPrincipalProfessor t = new TelaPrincipalProfessor(professor); // Passa o objeto professor para a tela principal
+            t.setVisible(true);
+            dispose();
+        } else {
+            // Login falhou
+            JOptionPane.showMessageDialog(this, "Email ou senha incorretos.", "Erro de Login", JOptionPane.ERROR_MESSAGE);
+        }
+
+    }//GEN-LAST:event_btLoginActionPerformed
+
+    private void txtSenhaKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtSenhaKeyPressed
+        if (evt.getKeyCode() == KeyEvent.VK_ENTER); //CONSIGO FAZER LOGIN APERTANDO ENTER
+    }//GEN-LAST:event_txtSenhaKeyPressed
+
+    private void esqueceuSenhaMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_esqueceuSenhaMouseExited
+
+        esqueceuSenha.setText("<html><u style='text-decoration: none;'>Esqueceu a senha?</u></html>");
+
+    }//GEN-LAST:event_esqueceuSenhaMouseExited
+
+    private void esqueceuSenhaMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_esqueceuSenhaMouseEntered
+
+    }//GEN-LAST:event_esqueceuSenhaMouseEntered
+
+    private void esqueceuSenhaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_esqueceuSenhaMouseClicked
+        TelaTrocaSenha t = new TelaTrocaSenha();
         t.setVisible(true);
-        dispose();
-        
-    }//GEN-LAST:event_jButton2ActionPerformed
-
-    private void jPasswordField1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jPasswordField1KeyPressed
-        if(evt.getKeyCode()==KeyEvent.VK_ENTER); //CONSIGO FAZER LOGIN APERTANDO ENTER
-    }//GEN-LAST:event_jPasswordField1KeyPressed
+    }//GEN-LAST:event_esqueceuSenhaMouseClicked
 
     /**
      * @param args the command line arguments
@@ -200,13 +259,13 @@ public class TelaLog extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
+    private javax.swing.JButton btCadastro;
+    private javax.swing.JButton btLogin;
+    private javax.swing.JLabel esqueceuSenha;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPasswordField jPasswordField1;
-    private javax.swing.JTextField jTextField1;
+    private javax.swing.JPasswordField txtSenha;
+    private javax.swing.JTextField txtUsuario;
     // End of variables declaration//GEN-END:variables
 }
